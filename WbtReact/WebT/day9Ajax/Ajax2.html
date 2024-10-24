@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            background-color:aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="container" ></div>
+    <input type="button" value="fetchdata" onclick="fetchdata()">
+    <script>
+        function fetchdata(){
+        const xht=new XMLhttprequest();
+        xhr.open("GET","https://jsonplaceholder.typicode.com/users");
+        xhr.send();
+        xhr.onreadystatechange=()=>{
+            if(xhr.readystate==4 && xhr.status==200){
+                console.log(xhr.responseText);
+                const data=JSON.parse(xhr.responseText);
+                console.log(data);
+                const container1=document.getElementById("container");
+                for(i=0; i<data.length; i++){
+                    const para=document.createElement ("p");
+                    para.inerhtml=data[i].Id +" "+data[i].name;
+                    container.appendchild(para);
+                }
+
+            }
+        }
+        
+        
+
+        
+        }
+
+    </script>
+    
+</body>
+</html>

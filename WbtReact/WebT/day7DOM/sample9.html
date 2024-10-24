@@ -1,0 +1,20 @@
+<html>
+    <head>
+        
+    </head>
+<body>
+    <input type="text" placeholder="enter 1st value"  id="n1">
+    <input type="text" placeholder="enter 2nd value"  id="n2">
+    <input type="button" value="sum" onclick="sum()">
+    <h3 id="result"></h3>
+    <script>
+    function sum()
+    {
+    const a=parseInt(document.getElementById("n1").value);
+    const b=parseInt(document.getElementById("n2").value);
+    const c=a+b;
+    document.getElementById("result").innerHTML="sum is "+c;
+    }
+    </script>
+    </body>
+    </html>

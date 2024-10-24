@@ -1,0 +1,24 @@
+
+table{
+    background:rgb(216, 96, 96);
+    color:white;
+    width:340px;
+    height: 300px;
+    margin:auto;
+  }
+  caption{
+    color:rgb(2, 7, 7);
+    text-decoration:2px wavy underline;
+  }
+  input{
+    outline:none;
+    font-size:20px;
+  }
+  th{
+    text-align:right;
+    font: size 30px;
+  }
+  output{
+    color:rgb(10, 10, 2);
+    font-size:20px;
+  }

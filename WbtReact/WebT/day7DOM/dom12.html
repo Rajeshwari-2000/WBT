@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>				
+<html lang="en">			 
+   <head>		
+	  <title>Dom12</title>			
+   </head>
+   <body>
+
+		<div id="div1">
+			
+			<button onclick="document.querySelector('h1').remove()" style="background-color:rgb(167, 59, 59);border-radius: 10px;font-size:25px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Remove Element</button>
+			
+		</div>
+		<br>
+		<div id="div2">
+			<button id="bt2" style="background-color:rgb(42, 165, 63); border-radius: 10px;font-size: 25px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> Add To Cart </button>
+		</div>
+		<hr>
+		<script>
+			document.querySelector("#bt2").onclick=function(){
+				
+				const pi=document.createElement("img"); 
+				pi.src="l.jfif";	
+				pi.style.width="250px";  
+				pi.style.height="220px";
+				
+				
+				const pn=document.createElement("h3"); 
+				pn.innerText="Apple 2024 MacBook Air 13″ Laptop with M3 chip: 34.46 cm (13.6″) Liquid Retina Display, 8GB Unified Memory, 512GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera, Touch ID- Silver";
+				
+				
+				const price=document.createElement("div");
+				price.innerHTML="Limited Time Deal <strong>&#8377;234500</strong><br>M.R.P.: <del>&#8377;333000</del>";
+
+                
+
+
+				const delbt=document.createElement("button");
+				delbt.innerText="delete item";
+				delbt.onclick=()=>document.querySelector("#product").remove();
+                delbt.style.color="red"; 
+               
+				
+				
+				const container=document.createElement("div");
+				container.id="product";
+				
+				container.appendChild(pi);
+				container.appendChild(pn);
+				container.appendChild(price);
+				container.appendChild(delbt);
+				container.style.width="260px";
+				container.style.padding="10px";
+				container.style.boxShadow="0px 0px 10px black";
+				container.style.borderRadius="15px";
+				container.style.textAlign="left";
+				container.style.display="inline-block";
+				container.style.margin="10px";		
+				
+				
+				
+				document.body.appendChild(container);		
+			}		
+		</script>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		

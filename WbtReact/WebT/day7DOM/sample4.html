@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1 id="myh1">welcome <span>to</span> world</h1>
+        <input type="button" value="get content" onclick="getContent()">
+        <script>
+        
+        function getContent(){
+        
+        var refvar = document.getElementById("myh1");
+        console .log(refvar);
+        
+        refvar.innerText="<h1>updated heading</h1>";
+        }
+        </script>
+        
+
+    </html>

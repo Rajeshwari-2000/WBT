@@ -1,0 +1,58 @@
+<!-- example on CSS Selector 
+	selector::pseudo-element{
+	   prop:val;
+	   ...
+	}
+-->   
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ex67</title>
+	<style>
+	  p::first-letter{
+	    color:white;
+		background:rgb(92, 190, 145);
+		font-size:30px;
+	  }
+	  p::first-line{
+		color:blue;
+	  }
+	  ::selection{
+		color:yellow;
+		background:red;
+	  }
+	  ::placeholder{
+		color:rgb(207, 24, 55);
+		text-align:center;
+	  }
+	  ::marker{
+		color:blue;
+	  }
+	  ol , ul {
+		color:teal;
+	  }
+	</style>
+  </head>
+  <body>
+	<h2>demo on pseudo elements</h2>
+	<p>Flowers carry importance in each nook and corner of the world. They also come in use for making medicines. Similarly, we also make difference in fragrance perfumes from the flowers. Further, the butterflies, birds and bees take the flowers as food.</p>
+	<p>
+        Flowers carry importance in each nook and corner of the world. They also come in use for making medicines. Similarly, we also make difference in fragrance perfumes from the flowers. Further, the butterflies, birds and bees take the flowers as food.</p>
+	<input type="text" placeholder="enter username"> <br>
+	<input type="password" placeholder="enter password">
+	
+	<ol>
+	  <li>Oracle</li> <li>MySQL</li>  <li>SQLServer</li>
+	  <li>MongoDB</li> <li>DB/2</li>
+	</ol>
+	<ul>
+	  <li>C</li> <li>CPP</li>  <li>Corejava</li>
+	  <li>C#.net</li> <li>Python</li>
+	</ul>	
+	
+	 
+  </body>
+</html>
+  
+
+					 

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Dishes</title>
+    <style>
+        .dish-container {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .dish {
+            text-align: center;
+        }
+        h1{
+            color: darkgreen;
+            text-align: center;
+            font-size: 50px;
+        }
+        h3{
+            color: darkgreen;
+            font-size: 30px;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="bg-image"></div>
+<h1>South Indian Cuisine</h1>
+    <div class="dish-container">
+        <div class="dish">
+            <img src="dosa.jfif" width="250" height="250" alt="Dosa" style="border-radius: 40px;">
+            <div><h2>Dosa (Serves 1) &nbsp; &#8377;100</h2></div>
+            <button id="decreDosa">-</button>
+            <input type="text" id="qtyDosa" value="0" readonly style="width:50px;text-align:center;">
+            <button id="increDosa">+</button> &nbsp; &nbsp; &nbsp; 
+            <div id="amtDosa" style="display:inline;">&#8377;0</div>
+        </div>
+
+        <div class="dish">
+            <img src="m.webp" width="250" height="250" alt="Medu Vada" style="border-radius: 40px;">
+            <div><h2>Medu Vada (Serves 1) &nbsp; &#8377;150</h2></div>
+            <button id="decreVada">-</button>
+            <input type="text" id="qtyVada" value="0" readonly style="width:50px;text-align:center;">
+            <button id="increVada">+</button> &nbsp; &nbsp; &nbsp; 
+            <div id="amtVada" style="display:inline;">&#8377;0</div>
+        </div>
+
+        <div class="dish">
+            <img src="idli.jpg" width="250" height="250" alt="Idli" style="border-radius: 40px;">
+            <div><h2>Idli (Serves 1) &nbsp; &#8377;80</h2></div>
+            <button id="decreIdli">-</button>
+            <input type="text" id="qtyIdli" value="0" readonly style="width:50px;text-align:center;">
+            <button id="increIdli">+</button> &nbsp; &nbsp; &nbsp; 
+            <div id="amtIdli" style="display:inline;">&#8377;0</div>
+        </div>
+
+        <div class="dish">
+            <img src="p.jpg" width="250" height="250" alt="Payasam" style="border-radius: 40px;">
+            <div><h2>Payasam (Serves 1) &nbsp; &#8377;220</h2></div>
+            <button id="decrePayasam">-</button>
+            <input type="text" id="qtyPayasam" value="0" readonly style="width:50px;text-align:center;">
+            <button id="increPayasam">+</button> &nbsp; &nbsp; &nbsp; 
+            <div id="amtPayasam" style="display:inline;">&#8377;0</div>
+        </div>
+    </div>
+
+    <button id="printBill" style="background-color:rgb(23, 131, 46);border-radius: 10px;font-size:25px;font-family:Verdana, Geneva, Tahoma, sans-serif;">Print Bill</button>
+    <div id="bill" style="margin-top: 20px;"></div>
+
+    <script>
+        // Dosa
+        const qtyDosa = document.querySelector("#qtyDosa");
+        const amtDosa = document.querySelector("#amtDosa");
+        
+        document.querySelector("#decreDosa").onclick = function() {
+            if (+qtyDosa.value !== 0) {
+                qtyDosa.value--;
+                amtDosa.innerHTML = "&#8377;" + 100 * qtyDosa.value;
+            }
+        }
+
+        document.querySelector("#increDosa").onclick = function() {
+            qtyDosa.value++;
+            amtDosa.innerHTML = "&#8377;" + 100 * qtyDosa.value;
+        }
+
+        // Medu Vada
+        const qtyVada = document.querySelector("#qtyVada");
+        const amtVada = document.querySelector("#amtVada");
+
+        document.querySelector("#decreVada").onclick = function() {
+            if (+qtyVada.value !== 0) {
+                qtyVada.value--;
+                amtVada.innerHTML = "&#8377;" + 150 * qtyVada.value;
+            }
+        }
+
+        document.querySelector("#increVada").onclick = function() {
+            qtyVada.value++;
+            amtVada.innerHTML = "&#8377;" + 150 * qtyVada.value;
+        }
+
+        // Idli
+        const qtyIdli = document.querySelector("#qtyIdli");
+        const amtIdli = document.querySelector("#amtIdli");
+
+        document.querySelector("#decreIdli").onclick = function() {
+            if (+qtyIdli.value !== 0) {
+                qtyIdli.value--;
+                amtIdli.innerHTML = "&#8377;" + 80 * qtyIdli.value;
+            }
+        }
+
+        document.querySelector("#increIdli").onclick = function() {
+            qtyIdli.value++;
+            amtIdli.innerHTML = "&#8377;" + 80 * qtyIdli.value;
+        }
+
+        // Payasam
+        const qtyPayasam = document.querySelector("#qtyPayasam");
+        const amtPayasam = document.querySelector("#amtPayasam");
+
+        document.querySelector("#decrePayasam").onclick = function() {
+            if (+qtyPayasam.value !== 0) {
+                qtyPayasam.value--;
+                amtPayasam.innerHTML = "&#8377;" + 220 * qtyPayasam.value;
+            }
+        }
+
+        document.querySelector("#increPayasam").onclick = function() {
+            qtyPayasam.value++;
+            amtPayasam.innerHTML = "&#8377;" + 220 * qtyPayasam.value;
+        }
+
+        
+    </script>
+
+</body>
+</html>

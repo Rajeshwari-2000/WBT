@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Dom9</title>
+</head>
+<body>
+
+    <div align="center">
+    <h1>Rajeshwari Deshmukh</h1>
+    <input type="radio" id="c1" name="color"><label>Red</label>&nbsp; &nbsp;
+    <input type="radio" id="c2" name="color"><label>orange</label>&nbsp; &nbsp;
+    <input type="radio" id="c3" name="color"><label>green</label>&nbsp; &nbsp;
+    </div>
+    <script>
+     const h1=document.querySelector("h1");
+     document.querySelector("#c1").onchange=function(){h1.style.color="Red";}
+     document.querySelector("#c2").onchange=function(){h1.style.color="orange";}
+     document.querySelector("#c3").onchange=function(){h1.style.color="green";}
+    </script>
+
+    <hr>
+    <label>Selector Background color</label><br>
+    <input type="color" id="c">
+    <script>
+		document.getElementById("c").onchange=function() 
+        {
+		document.body.style.background=c.value;
+		}
+	</script>
+		
+</body>
+</html>

@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+
+  <head>
+	<title>Arr</title>
+  </head>
+  <body>  
+	<h3>splice array methods</h3>	
+	<script>
+	  const eles=[10,20,30,40,50,60,70,80,90];
+	  document.write(`Eles	=>	${eles}<br>`);
+	  
+	  //deletion		
+	  eles.splice(5, 1);
+	  document.write(`aft del eles	=>	${eles}<br>`);
+	  let temp=eles.splice(0,3)
+	  document.write(`aft del eles	=>	${eles}<br>`);
+	  document.write(`temp	=>	${temp}<br>`);	  
+	 
+	  //updation		
+	  eles.splice(2,2, 11,22);
+	  document.write(`aft upd eles	=>	${eles}<br>`);	  
+	  
+	  
+	</script>
+  </body>		
+</html>

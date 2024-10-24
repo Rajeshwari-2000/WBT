@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dom11</title>
+ </head>
+ <body>
+   <h2> dom events</h2>
+	<div id="div1">
+        Diwali marks the start of the Hindu New Year and lasts for five days. The exact date changes yearly as it follows the Hindu calendar, but Diwali generally occurs between October and November. It’s known as the Hindu Festival of Lights as people decorate their homes with lights and ‘diyas’, or oil lights, because they’re said to help the goddess of wealth find her way to peoples’ homes. People will often draw ‘rangoli’, patterns made of coloured powders and flowers, on the floor at the entrance to their homes as a welcoming to the gods.
+        Aside from the beautiful decorations, Diwali is about spending time with friends and family. Feasts are held, gifts are exchanged and firecrackers are let loose – it’s a beautiful and entertaining time to be anywhere in India.</div>
+	<button onclick="document.querySelector('#div1').style.textAlign='left' ">Left</button>
+	<button onclick="document.querySelector('#div1').style.textAlign='right'">Right</button>
+	<button onclick="document.querySelector('#div1').style.textAlign='center'">Center</button>
+	<button onclick="document.querySelector('#div1').style.textAlign='justify'">Justify</button>
+
+	<button id="b">B</button>    
+	<button id="i">I</button> 
+	<button id="u">U</button> 
+	<input type="color" id="c">
+   <script>						 
+  	 const div=document.querySelector("#div1").style;
+	 document.querySelector("#b").onclick=function() {	
+										div.fontWeight='bold';
+									 }
+
+	 document.querySelector("#i").onclick= ()=>div.fontStyle="italic";
+
+	 document.querySelector("#u").onclick= ()=>div.textDecoration='underline';
+			
+	 document.querySelector("#c").onchange=()=>div.color=c.value;
+   </script>
+ </body>
+</html>			

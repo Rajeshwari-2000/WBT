@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<meta charset="UTF-8">
+	<title>JS</title>
+	<style>
+		img{
+			width:260px;
+			height:260px;
+			border:2px solid;
+			margin-right:40px;
+		}
+	</style>
+ </head>
+ <body>
+	<
+	<div align="center">
+		<img id="img1" src="idli.jpg">
+		<img id="img2" src="dosa.jfif">
+		<img id="img3" src="m.webp">
+	</div>
+	<script>
+		const im1 = document.images[0];	 
+		const im2 = document.images[1];
+		const im3 = document.images[2];
+
+		
+		im1.onmouseover=()=>{ im1.src="idli.jpg" };
+		im1.onmouseout=()=>{ im1.src="dosa.jfif" };
+
+		im2.onmouseover=()=>{ im2.src="dosa.jfif" };
+		im2.onmouseout=()=>{ im2.src="m.webp" };
+
+		im3.onmouseover=()=>{ im3.src="m.webp" };
+		im3.onmouseout=()=>{ im3.src="idli.jpg" };
+		im2.onmousedown=()=>{
+	
+		}
+	</script>
+  </body>
+</html>  

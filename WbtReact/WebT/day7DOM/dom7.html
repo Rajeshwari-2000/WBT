@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <img src="beauty.avif" height="500px" width="450px">
+    <br>
+    <input type="text" id="una" size="10">
+    <br>
+
+    <script>
+
+        const img=document.querySelector("img");
+        document.write(`${img.src}<br>`);
+        img.title="some random flower...";
+
+        const una=document.querySelector("#una");
+        document.write(`${una.type}<br>`);
+        una.placeholder="Enter name";
+        una.setAttribute("size",10);
+    </script>
+</body>
+</html>

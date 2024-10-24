@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Add</title>
+	<meta charset="UTF-8"> 
+  </head>
+  <body>
+    <label>First number</label> <br>
+	<input type="text" id="firstNum"> <br>
+	<label>Second number</label> <br>
+	<input type="text" id="secNum"> <bR>
+	<button onclick="addition()"> addition </button>
+	<br>
+	<output id="op"></output>
+	
+	<script>
+	  function addition()
+	  {
+	    let x, y, res;  
+	    x=+firstNum.value
+		y=+secNum.value;
+		res=x+y;
+		
+		op.value="Sum is "+res;		
+	  }	
+	</script>  
+  </body>
+</html>

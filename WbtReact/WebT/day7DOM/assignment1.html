@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #myImage {
+            width: 100px;  
+            height: 180px; 
+        }
+    </style>
+</head>
+<body>
+
+<img id="myImage" src="bulboff.jfif" alt="Light Bulb">
+<button onclick="changeImage()">switch</button>
+
+
+
+<script>
+function changeImage() {
+  var image = document.getElementById('myImage');
+  if (image.src.match("bulbon")) {
+    image.src = "bulboff.jfif";
+  } else {
+    image.src = "bulbon.jfif";
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<button>Start Animation</button>
+
+
+<div style="background:#c9648b;height:200px;width:600px;position:absolute;">Rajeshwari</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    var div = $("div");  
+    div.animate({left: '400px'}, "slow");
+    div.animate({fontSize: '8em'}, "slow");
+  });
+});
+</script> 
+</body>
+</html>

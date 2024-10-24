@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Dom8</title>
+</head>
+<body>
+    <button id="bt1">Push</button>&nbsp;&nbsp;
+    <button id="bt2">Pull</button>
+    <br>
+
+    <script>
+        const bt1=document.querySelector("#bt1");
+        bt1.addEventListener("click",function(){alert("hey...you push me..")});
+
+        const bt2=document.querySelector("#bt2");
+        bt2.onclick=function(){alert("hey...you push me..")};
+        document.querySelector("#bt2").onclick=function(){alert("hey..you pulled me....")}
+    </script>
+</body>
+</html>
